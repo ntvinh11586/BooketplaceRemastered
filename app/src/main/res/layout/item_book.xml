@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:id="@+id/itemBook"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:elevation="4dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/ivFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/ivBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                tools:src="@drawable/book_placeholder" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Naruto"
+            android:layout_below="@id/ivFrame"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            android:textColor="@android:color/background_dark"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <!--<TextView-->
+            <!--android:id="@+id/tvDescription"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/tvName"-->
+            <!--android:maxLines="3"-->
+            <!--android:ellipsize="end"-->
+            <!--android:layout_toRightOf="@id/ivFrame"-->
+            <!--android:textColor="@android:color/background_dark"-->
+            <!--tools:text="Bán Apple iPad Air 2 Wi-fi + Cellular 64Gb... Máy màu vàng (Gold); dung lượng 64Gb; đang dùng iOS 10.1.1 mượt mà. Hàng phân phối cho thị trường" />-->
+
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="99000"
+            android:layout_below="@id/tvName"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_alignLeft="@id/tvName"
+            android:layout_marginTop="4dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimary" />
+        <TextView
+            android:id="@+id/tvCondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            tools:text="New"
+            android:textSize="12sp"
+            android:layout_alignRight="@id/ivFrame"
+            android:layout_marginRight="8dp"
+            android:layout_alignTop="@id/tvPrice"
+            android:textColor="@android:color/darker_gray"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/tvPrice"
+            android:layout_alignLeft="@id/tvName"
+            android:layout_alignRight="@id/tvCondition"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/tvSeller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider"
+            android:layout_alignLeft="@id/tvName"
+            android:layout_alignRight="@id/tvCondition"
+            android:layout_marginTop="6dp"
+            tools:text="Tran Quang Dat"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12sp"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

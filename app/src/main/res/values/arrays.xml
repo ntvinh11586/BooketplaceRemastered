@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="condition_new">New</string>
+    <string name="condition_like_new">Like new</string>
+    <string name="condition_old">Old</string>
+    <string name="price_lo2hi">Low to high</string>
+    <string name="price_hi2lo">High to low</string>
+    <string name="vnd">đ</string>
+
+    <string name="us_dollar">$</string>
+    <string name="manga">Manga</string>
+    <string name="business">Business</string>
+    <string name="novel">Novel</string>
+    <string name="health">Health</string>
+    <string name="love">Love Story</string>
+    <string name="china">China</string>
+    <string name="self_help">Self Help</string>
+
+    <string-array name="spinner_condition">
+        <item>@string/condition_new</item>
+        <item>@string/condition_like_new</item>
+        <item>@string/condition_old</item>
+    </string-array>
+
+    <string-array name="spinner_currency">
+        <item>@string/vnd</item>
+        <item>@string/us_dollar</item>
+    </string-array>
+
+    <string-array name="spinner_category">
+        <item>@string/manga</item>
+        <item>@string/business</item>
+        <item>@string/novel</item>
+        <item>@string/health</item>
+        <item>@string/love</item>
+        <item>@string/china</item>
+        <item>@string/self_help</item>
+    </string-array>
+
+    <string-array name="price_entries">
+        <item>@string/price_hi2lo</item>
+        <item>@string/price_lo2hi</item>
+    </string-array>
+
+    <string-array name="price_entries_value">
+        <item>@string/price_hi2lo</item>
+        <item>@string/price_lo2hi</item>
+    </string-array>
+
+    <string-array name="condition_entries">
+        <item>@string/condition_new</item>
+        <item>@string/condition_like_new</item>
+        <item>@string/condition_old</item>
+    </string-array>
+
+    <string-array name="condition_entries_value">
+        <item>@string/condition_new</item>
+        <item>@string/condition_like_new</item>
+        <item>@string/condition_old</item>
+    </string-array>
+</resources>
